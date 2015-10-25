@@ -1,7 +1,7 @@
 serial-jpeg-viewer
 ==================
 
-A viewer for text jpeg data on the serial port. Just send a string called 'jpg\n' before each frame and send all the jpeg data in one line "ff,d8,32..." and with a '\n' at the end.
+A viewer for text(ascii) jpeg data sent on the serial port. Just send a string called 'jpg\n' before each frame and send all the jpeg data in one line "ff,d8,32..." and with a '\n' at the end. Built as a quick hack since human readability of the bytes was a requirement. Else, sending the jpeg data as binary is a much faster alternative.
 
 You'll need Visual Studio 10 atleast to compile this. Also before compiling set you baudrate and serial port number in the source. Since mine were constant, I did not provide a configurable setting.
 
